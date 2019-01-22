@@ -1,0 +1,22 @@
+create Project: 
+composer create-project --prefer-dist laravel/laravel stocks
+npm install
+
+php artisan migrate
+
+model with migration: 
+php artisan make:model Share -m
+
+Controller with resource :
+php artisan make:controller ShareController --resource
+
+Route list: 
+php artisan route:list
+
+Serve project: 
+php artisan serve
+-----------------------------
+php artisan optimize --force
+php artisan config:clear
+php artisan route:clear
+php artisan view:clear
